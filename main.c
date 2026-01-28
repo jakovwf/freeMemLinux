@@ -4,6 +4,14 @@
 #include <string.h>
 #include <sys/wait.h>
 
+//PROGRAM KOJI IZBACUJE KOLIKO JE TACNO SLOBODNE MEMROIJE NA LINUXU
+//POTREBNO JE DA SE PROGRAM KOMPAJLIRA - gcc main.c -o <ime-fajla>
+//KADA SE KOMPAJLIRA POTREBNO JE DA SE NAPISE SLEDECA KOMANDA
+// sudo mv <ime-fajla> /usr/local/bin/ 
+//POSLE TOGA OTVORI TERMINAL I UKUCAJ <ime-programa> 
+
+
+
 int main() {
     int fd[2];
     pipe(fd);
